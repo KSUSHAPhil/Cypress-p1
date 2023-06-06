@@ -6,7 +6,6 @@ const book = {
 
 describe ('book page', () => {
     beforeEach (() => {
-        cy.viewport(Cypress.env("viewportWidth"), Cypress.env("viewportHeight"));
         cy.visit('/');
         cy.login('test@test.com', 'test');
     });

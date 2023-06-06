@@ -4,18 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
-    "testWebChromeHeaded"    : "cypress run --browser chrome --headed    --config-file cypress.config.js",
-    "testWebChromeHeadless"  : "cypress run --browser chrome --headless  --config-file cypress.config.js",
-
-    "testMobChromeHeaded"    : "cypress run --browser chrome --headed   --config-file cypress2.config.js",
-    "testMobChromeHeadedless": "cypress run --browser chrome --headless --config-file cypress2.config.js",
-    
-    "testWebElectronHeaded"    : "cypress run --browser electron --headed    --config-file cypress.config.js",
-    "testWebElectronHeadless"  : "cypress run --browser electron --headless  --config-file cypress.config.js",
-
-    "testMobElectronHeaded"    : "cypress run --browser electron --headed   --config-file cypress2.config.js",
-    "testMobElectronHeadedless": "cypress run --browser electron --headless --config-file cypress2.config.js"
+    "PC:Chrome": "cypress run --browser chrome --headless",
+    "PC:FireFox": "cypress run --browser firefox --headless",
+    "MobileChrome": "cypress run --browser chrome --config-file cypress2.config.js --headed",
+    "MobileFireFox": "cypress run --browser firefox --config-file cypress2.config.js --headed"
   },
   "keywords": [],
   "author": "",
